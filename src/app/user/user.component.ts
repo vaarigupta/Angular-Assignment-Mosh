@@ -8,15 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class UserComponent implements OnInit {
   
   username: string="";
+  IsDisabled:boolean=true;
   constructor() { }
 
   ngOnInit(): void {
   }
   
-
   OnEnterUsername(event:Event)
   {
     this.username = (<HTMLInputElement>event.target).value;
+    if(this.username.length!=0)
+    {
+      this.IsDisabled = false;
+      
+    }
   }
+  
 
 }
