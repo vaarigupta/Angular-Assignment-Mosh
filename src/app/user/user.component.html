@@ -1,0 +1,12 @@
+<input 
+type="text"
+class="form-control"
+(input)="OnEnterUsername($event)"
+>
+<hr>
+<input 
+type="text"
+class="form-control"
+[(ngModel)]="username"
+>
+<p style="color: blueviolet;" >Hey My name is {{username}}</p>
