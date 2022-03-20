@@ -1,4 +1,4 @@
-# Angular Assignmets 
+# Angular Assignment1 - List of Authors
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
