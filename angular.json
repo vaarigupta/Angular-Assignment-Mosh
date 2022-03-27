@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Assignment2-Practicing-DataBinding": {
+    "titlecase-assignment": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/assignment2-practicing-data-binding",
+            "outputPath": "dist/titlecase-assignment",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Assignment2-Practicing-DataBinding:build:production"
+              "browserTarget": "titlecase-assignment:build:production"
             },
             "development": {
-              "browserTarget": "Assignment2-Practicing-DataBinding:build:development"
+              "browserTarget": "titlecase-assignment:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Assignment2-Practicing-DataBinding:build"
+            "browserTarget": "titlecase-assignment:build"
           }
         },
         "test": {
@@ -103,5 +103,5 @@
       }
     }
   },
-  "defaultProject": "Assignment2-Practicing-DataBinding"
+  "defaultProject": "titlecase-assignment"
 }
