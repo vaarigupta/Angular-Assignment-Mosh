@@ -1,13 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input,Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-favorite',
+  selector: 'favorite',
   templateUrl: './favorite.component.html',
   styleUrls: ['./favorite.component.css']
 })
+
+
 export class FavoriteComponent implements OnInit {
   
-  IsActive:boolean = true;
+ @Input('IsActive') IsActive:boolean = true;
+ @Output('change') change = new EventEmitter();
   constructor() {
    }
 
@@ -16,15 +19,17 @@ export class FavoriteComponent implements OnInit {
     
   OnClick()
   {
+    
     this.IsActive = !this.IsActive;
-    if(this.IsActive)
+    var favObject:FavouriteObject =
     {
-       console.log("filled star");
-    }
-    else
-    {
-      console.log("Empty star");
-
-    }
+      IsActive : this.IsActive
+    };
+    this.change.emit(favObject);
   }
+}
+
+export interface FavouriteObject
+{
+  IsActive:boolean
 }

@@ -1,5 +1,5 @@
 <div class="jumbotron">
     <div class="container">
-       <app-favorite></app-favorite>
+       <favorite [IsActive]="favobject.IsActive" (change)="OnFavChanged($event)"></favorite>
     </div>
 </div>
