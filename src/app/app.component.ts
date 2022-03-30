@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular Assignments';
+  title = 'Like Heart Assignment';
+
+  LikeButton = 
+  {
+    isLiked: false,
+    likesCount: 10,
+    body: "..."
+  }
+
 }
